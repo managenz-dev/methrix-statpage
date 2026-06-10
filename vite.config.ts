@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/methrix-statpage/', // CHANGE THIS to your exact repo name
+  base: '/methrix-statpage/', // This MUST match your repo name exactly
 })
