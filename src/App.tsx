@@ -57,7 +57,7 @@ const App = () => {
       {/* NAVIGATION */}
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <div className="nav-logo" onClick={() => scrollToSection('home')}>
-          <img src="/logo.png" alt="METHRIX" />
+          <img src="/methrix-statpage/logo.png" alt="METHRIX" />
         </div>
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -127,7 +127,7 @@ const App = () => {
           </div>
           <div className="hero-visual">
             <div className="hero-logo">
-              <img src="/logo1.png" alt="METHRIX Logo" />
+              <img src="/methrix-statpage/logo1.png" alt="METHRIX Logo" />
             </div>
             <div className="hero-card-grid">
               <div className="hero-stat-card">
@@ -392,7 +392,7 @@ const App = () => {
             <div className="about-grid">
               <div className="about-visual">
                 <div className="about-img-box">
-                  <img src="/logo1.png" alt="METHRIX Logo" />
+                  <img src="/methrix-statpage/logo1.png" alt="METHRIX Logo" />
                 </div>
                 <div className="about-badge">
                   <span className="about-badge-num">2026</span>
@@ -594,7 +594,7 @@ const App = () => {
         <div className="footer-inner">
           <div className="footer-top">
             <div className="footer-brand">
-              <img src="/logo.png" alt="METHRIX" />
+              <img src="/methrix-statpage/logo.png" alt="METHRIX" />
               <p>METHRIX is a simulation-based learning platform currently under development, designed to help management students and early professionals build real judgment through deliberate practice and personalised feedback.</p>
             </div>
             <div className="footer-col">
