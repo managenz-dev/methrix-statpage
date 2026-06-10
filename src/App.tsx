@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+// IMPORT THE IMAGES HERE:
+import logoImg from './assets/logo.png';
+import logo1Img from './assets/logo1.png';
+
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,7 +61,8 @@ const App = () => {
       {/* NAVIGATION */}
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <div className="nav-logo" onClick={() => scrollToSection('home')}>
-          <img src="/methrix-statpage/logo.png" alt="METHRIX" />
+          {/* USE THE IMPORTED VARIABLE */}
+          <img src={logoImg} alt="METHRIX" />
         </div>
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -127,7 +132,8 @@ const App = () => {
           </div>
           <div className="hero-visual">
             <div className="hero-logo">
-              <img src="/methrix-statpage/logo1.png" alt="METHRIX Logo" />
+              {/* USE THE IMPORTED VARIABLE */}
+              <img src={logo1Img} alt="METHRIX Logo" />
             </div>
             <div className="hero-card-grid">
               <div className="hero-stat-card">
@@ -176,16 +182,14 @@ const App = () => {
         </div>
       </section>
 
-      {/* MARQUEE - FIXED */}
+      {/* MARQUEE */}
       <div className="marquee-section">
         <div className="marquee-track">
-          {/* First set */}
           {domains.map((item, idx) => (
             <div key={`set1-${idx}`} className="marquee-item">
               {item} <span>◆</span>
             </div>
           ))}
-          {/* Second set (duplicate for seamless loop) */}
           {domains.map((item, idx) => (
             <div key={`set2-${idx}`} className="marquee-item">
               {item} <span>◆</span>
@@ -392,7 +396,8 @@ const App = () => {
             <div className="about-grid">
               <div className="about-visual">
                 <div className="about-img-box">
-                  <img src="/methrix-statpage/logo1.png" alt="METHRIX Logo" />
+                  {/* USE THE IMPORTED VARIABLE */}
+                  <img src={logo1Img} alt="METHRIX Logo" />
                 </div>
                 <div className="about-badge">
                   <span className="about-badge-num">2026</span>
@@ -589,12 +594,13 @@ const App = () => {
         </section>
       </div>
 
-      {/* FOOTER - FULL WHITE */}
+      {/* FOOTER */}
       <footer>
         <div className="footer-inner">
           <div className="footer-top">
             <div className="footer-brand">
-              <img src="/methrix-statpage/logo.png" alt="METHRIX" />
+              {/* USE THE IMPORTED VARIABLE */}
+              <img src={logoImg} alt="METHRIX" />
               <p>METHRIX is a simulation-based learning platform currently under development, designed to help management students and early professionals build real judgment through deliberate practice and personalised feedback.</p>
             </div>
             <div className="footer-col">
